@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="javascript" href="script.js">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="enter location"
+            spellcheck="false">
+            <button id="searchButton" onclick="searchFunction()"><img src="images/search.png"></button>
+        </div>
+        <div class="error">
+            <p>Invalid location!</p>
+        </div>
+        <div class="weather">
+            <div class="header">
+                <div class="location">
+                    <image src="images/location.png">
+                    <h2 class="city">Banglore</h2></image>
+                </div>
+                <!-- <div class="clock">
+                    <image src="images/clock.png">
+                    <h2 class="time">12:00 PM</h2></image>
+                </div> -->
+            </div>
+            <img src="images/cloudy.png" class="weather-icon">
+            <div class="temp">
+                <h1 class="tempC">22°C</h1>
+                <h4 class="tempF">/98°F</h4>
+            </div>
+            <!-- <h2 class="city">Banglore</h2> -->
+            <h3 class="description">Rain</h3>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/windy.png">
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
